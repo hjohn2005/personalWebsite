@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        
+        <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" href="personal-info.png">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header> 
+            <a href="https://www.linkedin.com/in/hannah-johnston-3a966423a/"><img src="linkedin.png" alt="Linked in logo" width="30" height="30"/></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">About me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+    
+            </nav>
+            <a class="cta" href="mailto:hn244734@dal.ca"><button>Contact</button></a>
+        </header>
+        <div class="dropdown">
+            <button class="dropBtn">Toggle Modes</button>
+            <div class="dropdown-content">
+                <label class="switch"> Dark Mode
+                    <input type="checkbox" id="darkMode">
+                    <span class="slider round"></span>
+                </label>
+                <label class ="switch"> Dalhousie Mode
+                    <input type="checkbox" id="dalMode">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">Light Mode
+                    <input type="checkbox" id ="lightMode">
+                    
+                </label>
+            </div>
+        </div>
+       
+        <main>
+            <h1 id="java">My Java Projects</h1>
+            <div class="flex-container">
+
+            <div class="Attentia">
+
+            
+                <li><h2>Attentia</h2>
+                    <p>Attentia is a planning application made for people with ADHD</p>
+                    <p>Key features:</p>
+                    <ol>
+                        <li>User inputted to do list</li>
+                        <img src="addTask.png" alt="to do list" width="330" height="200">
+                        <li>Badges earned from completing tasks</li>
+                        <img src="badges.png" alt="to do list" width="330" height="200">
+                        <li>Time various tasks will take to complete</li>
+                        <img src="homepage.png" alt="to do list" width="330" height="200">
+                    </ol>
+                             
+                </li>
+            </div>
+            <div class="bees">
+                <li><h2>Bee's Breakfast</h2>
+                    <p>Bee's Breakfast is a resturant order application</p>
+                    <p>Key features:</p>
+                    <ol>
+                        <li>Employee login</li>
+                        <img src="employee.png" alt="Bee's breakfast login" width="330" height="200">
+                        <li>Preset menu items</li>
+                        <img src="menu.png" alt="tables with menus items" width="330" height="200">
+                        <li>Calculates total cost per table before tip</li>
+                        <img src="cost.png" alt="tables with total cost" width="330" height="200">
+                    </ol>
+                </li>
+            </div>
+            <div class="kits">
+                <li><h2>Kits4Kids</h2>
+                    <p>Kits4Kids is a internet safety quiz geared towards children</p>
+                    <p>Key features:</p>
+                    <ol>
+                        <li>Sound feedback for every answer</li>
+                        <li>Custom drawn characters</li>
+                        <li>Certificate of completion</li>
+                    </ol>
+                    <p>Kits4Kids demo:</p>
+                    <iframe src="https://drive.google.com/file/d/1NrxJof3Yhx4KrKUBEez5teJqugCSz0lx/preview" width="550" height="480"></iframe>
+                </li>
+            </div>
+            <div class="pong">
+                <li><h2>Pong recreation</h2>
+                    <p>Pong demo:</p>
+                    <video src="pongdemo1.mp4" width="640" height="480" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+            </div>
+           
+            <form id="portfolioForm">
+                <h3>Question about a project?</h3>
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="project">Project:</label>
+                    <select id="project">
+                        <option value="attentia">Attentia</option>
+                        <option value="bees">Bee's Breakfast</option>
+                        <option value="kits">Kits4Kids</option>
+                        <option value="pong">Pong</option>
+                    </select>
+                    <div class="error" id="projectError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"name="message" rows="10" cols="10"></textarea>
+                    <div class="error" id="messageError"></div>
+                </div>
+                <div class="input-group">
+                    <legend>Preffered Contact Method:</legend>
+                    <input type="radio" id="email-contact" name="contact-method" value="email" required>
+                    <label for="email-contact">Email</label></br>
+                    <input type="radio" id="phone-contact" name="contact-method" value="phone">
+                    <label for="phone-contact">Phone</label></br>
+                </div>
+                <div id="phoneField" style="display: none;">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="error" id="phoneError"></div>
+                </div>
+                <button type="submit">Submit Inquiry</button>
+                <div id="success" style="display: none;">
+                <p>Sucessfully submitted</p></div>
+            </form>
+
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

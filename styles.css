@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-color: lavender;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dark-mode .dropdown{
+    color: black;
+}
+
+
+.dark-mode{
+    background-color: rgb(69, 69, 69);
+    color:aliceblue;
+   
+}
+.dark-mode .nav_links li a {
+    color: aliceblue;
+}
+.dark-mode header {
+    background-color: rgb(48, 48, 48);
+}
+.dark-mode .nav_links li a:hover{
+    color: rgb(96, 205, 241);
+}
+
+.dal-mode{
+    background-color: rgb(220, 198, 72);
+}
+.dal-mode header{
+    background-color:  rgb(75, 74, 74);
+}
+.dal-mode .nav_links li a {
+    color:aliceblue;
+}
+
+header{
+    background-color: aliceblue;
+    padding: 70px 40px;
+    margin-bottom: 10px;
+   
+}
+.nav_links{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: blue;
+}
+button {
+    padding: 9px 25px;
+    background-color: lavender;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3 ease 0s;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 800px;
+}
+.aboutMe h3 ~ p{
+    font-family:"Montserrat", sans-serif; 
+}
+.title {
+    
+    grid-row: 1 / 2;
+    display: flex;
+    justify-self: center; 
+   
+}
+h3, h1{
+    font-family:"Montserrat", sans-serif; 
+}
+.Hannahpic {
+    grid-row: 2 / 3;
+}
+
+.aboutMe {
+    grid-row: 2 / 4;
+    padding-bottom: 380px;
+    
+}
+
+    
+.aboutMe + div{
+    font-family:"Montserrat", sans-serif; 
+}
+
+.song {
+    grid-row: 3 / 4;
+}
+
+
+main{
+    font-family: "Montserrat", sans-serif;
+}
+#Hannahtitle{
+    text-align: center;
+}
+.item2 > p {
+    text-align: center;
+}
+#Hannahtitle ~ img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+#java{
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-content: space-around;
+}
+.dark-mode .flex-container > div{
+    background-color: black;
+    border-radius: 8px;
+
+}
+.flex-container > div{
+    background-color:aliceblue;
+    border-radius: 8px;
+
+}
+.flex-container li h2{
+    list-style: none;
+    text-align: center;
+}
+.flex-container p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.flex-container img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 1px;
+    margin: auto;
+}
+ol {
+    margin:0 0 0 1px;
+    padding: 0;
+}
+ol li { 
+    list-style-type: decimal; 
+    list-style-position: inside; 
+}
+textarea{
+    width:100%;
+    max-width: 100%;
+}
+#portfolioForm{
+    background-color: aliceblue;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+table, th, td{
+    border: 1px solid;
+    font-size:x-large;
+    
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+.dark-mode .table {
+    background-color:gray;
+}
+.dal-mode .table{
+    background-color:whitesmoke;
+}
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lavenderblush;
+}
+#eduTitle{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#coursesDes{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+[href="index.html"] {
+    color: black;
+    text-decoration: none;
+}
+[href="portfolio.html"] {
+    color: black;
+    text-decoration: none;
+}
+[href="education.html"] {
+    color: black;
+    text-decoration: none;
+}
+.error{
+    color: red;
+}
+
+
+
