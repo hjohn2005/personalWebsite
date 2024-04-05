@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneRadio = document.getElementById('phone-contact');
     const emailRadio = document.getElementById('email-contact');
     const success = document.getElementById('success');
-const darkMode = document.getElementById('darkMode');
-const header = document.querySelector('header');
-const dalMode = document.getElementById('dalMode');
-const lightMode = document.getElementById('lightMode');
+    const darkMode = document.getElementById('darkMode');
+    const header = document.querySelector('header');
+    const dalMode = document.getElementById('dalMode');
+    const lightMode = document.getElementById('lightMode');
     darkMode.addEventListener("click",() =>{
         if(darkMode.checked){
         dalMode.checked = false;

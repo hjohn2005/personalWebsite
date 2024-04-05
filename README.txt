@@ -49,6 +49,7 @@ Sibling Selector (~): Located within the styling section for the title and image
 Adjacent Selector (+): Located within the styling section for the About Me content and adjacent div in styles.css.
 Attribute Selector: Located at the end of styles.css.
 
+Live site link: https://hjohn2005.github.io/personalWebsite/
 
 
 Reference: 

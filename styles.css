@@ -213,6 +213,9 @@ textarea{
     width:100%;
     max-width: 100%;
 }
+.dark-mode #portfolioForm{
+    background-color: rgb(48, 48, 48);
+}
 #portfolioForm{
     background-color: aliceblue;
     border: 3px;
